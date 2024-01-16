@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <!-- Hamburger Div -->
+    <div class="hamburger-div">
+      <img
+        id="ham-icon"
+        src="img/hamIcon.png"
+        alt="Hamburger Icon"
+        width="30"
+      />
+    </div>
+
+    <!-- Settings Div -->
+    <div id="settings-div" style="display: none">
+      <p>Enter your Settings below:</p>
+      <p>Name: <input id="name-in" type="text" /></p>
+      <p>Today's Focus: <input id="focus-in" type="text" /></p>
+      <p>
+        Background:
+        <select id="bg">
+          <option value="cliff">Cliff</option>
+          <option value="flowers">Flowers</option>
+          <option value="forest">Forest</option>
+          <option value="northernLights">Northern Lights</option>
+          <option value="sunset">Sunset</option>
+        </select>
+      </p>
+      <p>
+        <button id="randQuote">Random Quote</button>
+        <button id="saveSettings">Save Settings</button>
+      </p>
+    </div>
+
+    <!-- Display Div -->
+    <div class="display-div">
+      <h1 id="name-out">Hello!</h1>
+      <p>Today's Focus:</p>
+      <h2 id="focus-out">---</h2>
+      <hr />
+      <p id="quote-out">---</p>
+    </div>
+  </body>
+</html>
